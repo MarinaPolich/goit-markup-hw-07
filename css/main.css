@@ -17,7 +17,7 @@
     background-position: center;
 }
 
-.hero-title {
+.hero__title {
     max-width: 696px;
     margin-top: 0;
     margin-bottom: 30px;
@@ -127,7 +127,7 @@
     flex-wrap: wrap;
 }
 
-.team > .item {
+.team__item {
     text-align: center;
     width: calc((100% - 90px) / 4);
     padding-bottom: 30px;
@@ -137,19 +137,19 @@
     border-radius: 0px 0px 4px 4px;
 }
 
-.team > .item:not(:nth-child(4n)) {
+.team__item:not(:nth-child(4n)) {
     margin-right: 30px;
 }
 
-.team > .item:not(:nth-last-child(-n + 4)) {
+.team__item:not(:nth-last-child(-n + 4)) {
     margin-bottom: 30px;
 }
 
-.team .photo {
+.team__photo {
     margin-bottom: 30px;
 }
 
-.team .title {
+.team__title {
     margin-top: 0;
     margin-bottom: 10px;
 
@@ -160,7 +160,7 @@
     line-height: 1.18;
 }
 
-.team .text {
+.team__text {
     margin-top: 0;
     margin-bottom: 16px;
 
