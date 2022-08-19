@@ -4,10 +4,10 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 50px;
+}
 
-    &:not(:last-child) {
-        margin-right: 8px;
-    }
+.filter__item:not(:last-child) {
+    margin-right: 8px;
 }
 
 .filter__button {
@@ -20,9 +20,7 @@
     font-weight: 500;
     line-height: 1.6;
 
-    @include transition(background-color);
-    @include transition(color);
-    @include transition(box-shadow);
+    @include transition(background-color, color, box-shadow);
 
     &:hover,
     &:focus,

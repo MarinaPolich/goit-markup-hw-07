@@ -50,8 +50,7 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50% 50%;
 
-    @include transition(border);
-    @include transition(fill);
+    @include transition(border, fill);
     cursor: pointer;
 
     &:hover,
@@ -128,6 +127,7 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 
+    @include transition(border);
     cursor: pointer;
 
     &::placeholder {
@@ -198,8 +198,7 @@
     border: 2px solid var(--title-text-color);
     border-radius: 4px;
 
-    @include transition(background-color);
-    @include transition(border);
+    @include transition(background-color, border);
 
     .form-modal__input-check:focus + & {
         outline: var(--accent-color);

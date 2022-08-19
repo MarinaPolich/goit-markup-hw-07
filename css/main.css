@@ -481,10 +481,8 @@ body {
   background-color: var(--primary-white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50% 50%;
-  -webkit-transition: border 250ms var(--timing-function);
-  transition: border 250ms var(--timing-function);
-  -webkit-transition: fill 250ms var(--timing-function);
-  transition: fill 250ms var(--timing-function);
+  -webkit-transition: border 250ms var(--timing-function), fill 250ms var(--timing-function);
+  transition: border 250ms var(--timing-function), fill 250ms var(--timing-function);
   cursor: pointer;
 }
 
@@ -556,6 +554,8 @@ body {
   color: #000;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  -webkit-transition: border 250ms var(--timing-function);
+  transition: border 250ms var(--timing-function);
   cursor: pointer;
 }
 
@@ -636,10 +636,8 @@ body {
   margin-right: 9px;
   border: 2px solid var(--title-text-color);
   border-radius: 4px;
-  -webkit-transition: background-color 250ms var(--timing-function);
-  transition: background-color 250ms var(--timing-function);
-  -webkit-transition: border 250ms var(--timing-function);
-  transition: border 250ms var(--timing-function);
+  -webkit-transition: background-color 250ms var(--timing-function), border 250ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function), border 250ms var(--timing-function);
 }
 
 .form-modal__input-check:focus + .form-modal__box-check {
@@ -900,7 +898,7 @@ body {
   margin-bottom: 50px;
 }
 
-.filter:not(:last-child) {
+.filter__item:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -910,14 +908,10 @@ body {
   color: var(--title-text-color);
   font-weight: 500;
   line-height: 1.6;
-  -webkit-transition: background-color 250ms var(--timing-function);
-  transition: background-color 250ms var(--timing-function);
-  -webkit-transition: color 250ms var(--timing-function);
-  transition: color 250ms var(--timing-function);
-  -webkit-transition: -webkit-box-shadow 250ms var(--timing-function);
-  transition: -webkit-box-shadow 250ms var(--timing-function);
-  transition: box-shadow 250ms var(--timing-function);
-  transition: box-shadow 250ms var(--timing-function), -webkit-box-shadow 250ms var(--timing-function);
+  -webkit-transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function), -webkit-box-shadow 250ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function), -webkit-box-shadow 250ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function), box-shadow 250ms var(--timing-function), -webkit-box-shadow 250ms var(--timing-function);
 }
 
 .filter__button:hover, .filter__button:focus, .filter__button-active {
